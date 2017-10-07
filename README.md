@@ -22,8 +22,8 @@ Buttons mapping:
 * Mode1:
   * Btn5D - Open Hand
   * Btn6D - Close Hand
-  * Btn7U - Raise Arm
-  * Btn7D - Lower Arm
+  * Btn5U - Raise Arm
+  * Btn6U - Lower Arm
 
 ## Brain
 Motor Mapping:
