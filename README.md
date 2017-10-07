@@ -8,7 +8,7 @@ Joystick mapping:
 * Ch2(Right Joystick up/down) - Right Wheel
 
 Buttons mapping:
-* Btn7L - Changes the Mode
+* Btn7L - Changes the Mode between Mode0 and Mode1
 * Btn7U - Catapult Launch
 * Btn7D - Catapult Reset
 * Btn8L - Rotate Hand Left
