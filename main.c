@@ -27,8 +27,8 @@ Button mapping:
 	Mode1:
 		Btn5D - Open Hand
 		Btn6D - Close Hand
-		Btn7U - Raise Arm
-		Btn7D - Lower Arm
+		Btn5U - Raise Arm
+		Btn6U - Lower Arm
 
 ********************************/
 task main()
@@ -47,7 +47,7 @@ task main()
 	int servoIncrement = 10;
 
 	// Joystick Threshold servo rotation
-	int threshold = 10;
+	int threshold = 15;
 
 	// Main Event Loop
 	while (true) {
@@ -166,7 +166,7 @@ task main()
 			}
 
 			// 6D - Close Hand
-			if (vexRT[Btn5D] == 1) {
+			if (vexRT[Btn6D] == 1) {
 				// Make sure the servo isnt at the min position already.
 				if (motor[handLeft] > maxServoNeg ) {
 					// Decrease left side of hand
@@ -176,13 +176,13 @@ task main()
 				}
 			}
 
-			// 7U - Raise Arm
-			if (vexRT[Btn7U] == 1) {
+			// 5U - Raise Arm
+			if (vexRT[Btn5U] == 1) {
 				// Rotate motor to raise arm
 				motor[armMotor] = 100;
 
-			// 7D - Lower Arm
-			} else if (vexRT[Btn7D] == 1) {
+			// 6U - Lower Arm
+			} else if (vexRT[Btn6U] == 1) {
 				// Provide a negative value which rotates the motor the opposite direction and lowers the arm.
 				motor[armMotor] = -100;
 			} else {
